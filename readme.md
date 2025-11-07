@@ -11,6 +11,10 @@ SECRET_KEY=<YOUR_SECRET_KEY>
 # MongoDB Connection String - PASTE DI SINI! 👇
 MONGODB_URI=<YOUR_MONGODB_CONNECTION_STRING>
 
+# MongoDB Collection 
+1. web data
+2. user
+
 # MongoDB Database Sample - web data
 ```javascript
 {
