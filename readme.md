@@ -11,31 +11,46 @@ SECRET_KEY=<YOUR_SECRET_KEY>
 # MongoDB Connection String - PASTE DI SINI! 👇
 MONGODB_URI=<YOUR_MONGODB_CONNECTION_STRING>
 
-# MongoDB Database Sample
+# MongoDB Database Sample - web data
 ```javascript
-{"_id":{"$oid":"690d79ab277bd6100c2fcdbb"},
-"pesertaPaket":{
-    "siswaPAUD":{"$numberInt":"17"},
-    "paketA":{"$numberInt":"38"},
-    "paketB":{"$numberInt":"95"},
-    "paketC":{"$numberInt":"101"}
+{
+    "_id":{
+    "$oid":"690d79ab277bd6100c2fcdbb"
     },
-"images":[
-    {
-        "imageId":"adf82313-8f75-4760-8708-11699e29aabe",
-        "imageAlt":"IMAGE01","imageUrl":"https://res.cloudinary.com/dwkpscs0j/image/upload/v1762535067/folder_name/file_azlhhk.gif",
-        "createdAt":{
-            "$date":{
-                "$numberLong":"1762535067982"
-                }
-            },
-            "updatedAt":{
+    "pesertaPaket":{
+        "siswaPAUD":{"$numberInt":"17"},
+        "paketA":{"$numberInt":"38"},
+        "paketB":{"$numberInt":"95"},
+        "paketC":{"$numberInt":"101"}
+        },
+    "images":[
+        {
+            "imageId":"adf82313-8f75-4760-8708-11699e29aabe",
+            "imageAlt":"IMAGE01","imageUrl":"https://res.cloudinary.com/dwkpscs0j/image/upload/v1762535067/folder_name/file_azlhhk.gif",
+            "createdAt":{
                 "$date":{
                     "$numberLong":"1762535067982"
                     }
                 },
-            "cloudinaryId":"folder_name/file_azlhhk"
-        }
-    ]
+                "updatedAt":{
+                    "$date":{
+                        "$numberLong":"1762535067982"
+                        }
+                    },
+                "cloudinaryId":"folder_name/file_azlhhk"
+            }
+        ]
 }
+
+```
+# MongoDB Database Sample - user
+```javascript
+{
+    "_id":{
+    "$oid":"690d67908729fb77f04fa708"
+    },
+    "username":"admin",
+    "password":"hashed_password"
+}
+
 ```
